@@ -24,3 +24,11 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+workflows:
+    example-workflow:
+      jobs:
+        - node/run
+        workflows:
+    example-workflow:
+      jobs:
+        - node/run
